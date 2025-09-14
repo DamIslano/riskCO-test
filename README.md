@@ -1,11 +1,4 @@
-# Nuxt Minimal Starter
-
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
 ## Setup
-
-Make sure to install dependencies:
-
 ```bash
 # npm
 npm install
@@ -20,56 +13,13 @@ yarn install
 bun install
 ```
 
-## Development Server
+# Пости на Nuxt 3 з TypeScript та SCSS
 
-Start the development server on `http://localhost:3000`:
+SPA/SSR-додаток, який відображає список постів та детальну інформацію про кожен пост із коментарями, використовуючи публічне API JSONPlaceholder. Реалізовано: пагінацію «Завантажити ще», стани завантаження та помилок, SEO через useHead, адаптивну верстку без UI-бібліотек, типізацію даних через TypeScript, організацію коду з composables та компонентами.
 
-```bash
-# npm
-npm run dev
+Технології: Nuxt 3, TypeScript, SCSS, SSR, JSONPlaceholder API, **lodash-es**
 
-# pnpm
-pnpm dev
+По ТЗ: Зроблено все, окрім "Збереження скролу", оскільки скрол робив не по сторінці, а в самому div блоці, тому юзати щось на кшталт vueUse для фічі саме в цьому випадку може бути зайвим.
 
-# yarn
-yarn dev
 
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+![Preview](/app/assets/images/risk-demo.gif)
