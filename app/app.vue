@@ -17,6 +17,16 @@
 
 <script setup lang="ts">
 const route = useRoute();
+
+useHead(() => {
+  if (route.path === '/') {
+    return { title: 'Головна сторінка' }
+  } else if (route.path.startsWith('/posts/')) {
+    return { title: 'Пост' }
+  } else {
+    return { title: 'RISK test' }
+  }
+})
 </script>
 
 <style lang="scss">
